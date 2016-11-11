@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0fb5e65d731ec96ca8fd33e23a6db6631dcc19a1">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4f2c7f5b903131678ba4c5058a887658123842e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="604516880bbf09dc2e25a0c753b52cbc1bddd95b">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_50f1ef81d9b02a2f51f842f05507bb81ceec154a/classes.dex" />
+    </item>
+
+</items>
