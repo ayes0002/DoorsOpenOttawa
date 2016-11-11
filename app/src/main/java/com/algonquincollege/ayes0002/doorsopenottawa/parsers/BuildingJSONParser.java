@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  *
- * @author Gerald.Hurdle@AlgonquinCollege.com ayes0002@algonquinlive.com
+ * @author ayes0002@algonquinlive.com
  *
  * Reference: FlowerJSONParser in "Connecting Android Apps to RESTful Web Services" with David Gassner
  */

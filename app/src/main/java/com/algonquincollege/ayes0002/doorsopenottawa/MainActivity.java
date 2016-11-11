@@ -20,7 +20,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *  Purpose/Description of class
  *  @author Hjalmar Ayestas (ayes0002@algonquinlive.com)
  */
 
