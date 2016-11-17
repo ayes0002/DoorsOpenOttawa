@@ -17,9 +17,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
         android:layout_toRightOf="@+id/imageView1"
-        android:layout_centerVertical="true"
         android:text="@string/building_name_placeholder"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:layout_below="@id/textView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="@string/building_open_hours_placeholder"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

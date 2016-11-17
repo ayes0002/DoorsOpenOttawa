@@ -1,5 +1,7 @@
 package com.algonquincollege.ayes0002.doorsopenottawa.model;
 
+import android.graphics.Bitmap;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -17,6 +19,8 @@ public class Building {
     private String image;
     private JSONArray open_hours;
     private String date = "";
+    private Bitmap bitmap;
+    private String description;
 
     // GETTERS
     public int getBuildingId() { return buildingId; }
@@ -25,6 +29,8 @@ public class Building {
     public String getName() { return name; }
     public JSONArray getOpen_hours() { return open_hours; }
     public String getDate(){ return date; }
+    public Bitmap getBitmap() { return bitmap; }
+    public String getDescription() { return description; }
 
     // SETTERS
     public void setAddress( String address ) {
@@ -45,9 +51,13 @@ public class Building {
         for (int i=0; i<open_hours.length(); i++){
             try {
                 date += open_hours.getJSONObject(i).getString("date") + "\n";
-            } catch (JSONException e) {}
+            } catch (JSONException e) {
+
+            }
         }
     }
+    public void setBitmap(Bitmap bitmap) { this.bitmap = bitmap; }
+    public void setDescription(String description) { this.description = description; }
 
 
 }

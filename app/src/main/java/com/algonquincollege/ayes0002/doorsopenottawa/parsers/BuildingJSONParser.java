@@ -36,6 +36,7 @@ public class BuildingJSONParser {
                 building.setImage(obj.getString("image"));
                 building.setName(obj.getString("name"));
                 building.setOpen_hours(obj.getJSONArray("open_hours"));
+                building.setDescription(obj.getString("description"));
                 buildingList.add(building);
             }
 

@@ -1,8 +1,10 @@
 package com.algonquincollege.ayes0002.doorsopenottawa;
 
 import android.app.Activity;
+import android.app.DialogFragment;
 import android.app.ListActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -10,6 +12,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -20,17 +24,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *  @author Hjalmar Ayestas (ayes0002@algonquinlive.com)
+ *  This application uses REST API server to fetch data from a JSON file in the web and display it
+ *  in a list form. Once an element in the list is tapped it would navigate to another screen with
+ *  the details of that particular building
+ *  @author Hjalmar Ayestas (ayes0002@algonquinlive.com) Anton Antonenko (anto@algonquinlive.com)
  */
 
-public class MainActivity extends ListActivity {
+public class MainActivity extends ListActivity implements AdapterView.OnItemClickListener {
 
-    // URL to my RESTful API Service hosted on gerrys Bluemix account.
+    // URL to Gerrys RESTful API Service hosted on his Bluemix account.
+    public static final String IMAGES_BASE_URL = "https://doors-open-ottawa-hurdleg.mybluemix.net/";
     public static final String REST_URI = "https://doors-open-ottawa-hurdleg.mybluemix.net/buildings";
 
     private ProgressBar pb;
     private List<MyTask> tasks;
-
     private List<Building> buildingList;
 
     @Override
@@ -42,6 +49,14 @@ public class MainActivity extends ListActivity {
         pb.setVisibility(View.INVISIBLE);
 
         tasks = new ArrayList<>();
+
+        getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+        getListView().setOnItemClickListener(this);
+        if (isOnline()) {
+            requestData( REST_URI );
+        } else {
+            Toast.makeText(this, "Network isn't available", Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
@@ -52,12 +67,10 @@ public class MainActivity extends ListActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_get_data) {
-            if (isOnline()) {
-                requestData( REST_URI );
-            } else {
-                Toast.makeText(this, "Network isn't available", Toast.LENGTH_LONG).show();
-            }
+        if (item.getItemId() == R.id.action_about) {
+            DialogFragment newFragment = new AboutDialogFragment();
+            newFragment.show( getFragmentManager(), "About Dialog" );
+            return true;
         }
         return false;
     }
@@ -68,7 +81,6 @@ public class MainActivity extends ListActivity {
     }
 
     protected void updateDisplay() {
-        //Use PlanetAdapter to display data
         BuildingAdapter adapter = new BuildingAdapter(this, R.layout.item_building, buildingList);
         setListAdapter(adapter);
     }
@@ -83,7 +95,20 @@ public class MainActivity extends ListActivity {
         }
     }
 
-    private class MyTask extends AsyncTask<String, String, String> {
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Building theSelectedBuilding = buildingList.get(position);
+        Intent intent = new Intent( getApplicationContext(), DetailActivity.class );
+        intent.setFlags( Intent.FLAG_ACTIVITY_CLEAR_TOP );
+        intent.putExtra( "buildingName", theSelectedBuilding.getName() );
+        intent.putExtra( "buildingAddress", theSelectedBuilding.getAddress() );
+        intent.putExtra( "buildingDescription", theSelectedBuilding.getDescription());
+        intent.putExtra( "buildingOpenHours", theSelectedBuilding.getDate());
+        startActivity( intent );
+        Toast.makeText(this, theSelectedBuilding.getName(), Toast.LENGTH_LONG).show();
+    }
+
+    private class MyTask extends AsyncTask<String, String, List<Building>> {
 
         @Override
         protected void onPreExecute() {
@@ -94,14 +119,15 @@ public class MainActivity extends ListActivity {
         }
 
         @Override
-        protected String doInBackground(String... params) {
+        protected List<Building> doInBackground(String... params) {
 
             String content = HttpManager.getData(params[0]);
-            return content;
+            buildingList = BuildingJSONParser.parseFeed(content);
+            return buildingList;
         }
 
         @Override
-        protected void onPostExecute(String result) {
+        protected void onPostExecute(List<Building> result) {
 
             tasks.remove(this);
             if (tasks.size() == 0) {
@@ -113,7 +139,7 @@ public class MainActivity extends ListActivity {
                 return;
             }
 
-            buildingList = BuildingJSONParser.parseFeed(result);
+            buildingList = result;
             updateDisplay();
         }
     }

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/buildingOpenHours"
+        android:layout_below="@+id/buildingDescription"
+        android:layout_alignStart="@+id/buildingDescription" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/buildingName"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:textColor="#000"
+        android:id="@+id/buildingDescription"
+        android:layout_below="@+id/buildingName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp" />
+</RelativeLayout>
+
+    <!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent" tools:context=".MapsActivity">-->
+
+<!--<EditText-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/userLocation"-->
+    <!--android:hint="Enter Your Location"/>-->
+
+<!--<fragment xmlns:map="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_below = "@+id/userLocation"-->
+    <!--android:id="@+id/map"-->
+    <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+
+
+<!--</RelativeLayout>-->
