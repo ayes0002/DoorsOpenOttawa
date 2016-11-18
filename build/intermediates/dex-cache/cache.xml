@@ -3,11 +3,20 @@
 
     <item
         is-multidex="true"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/libs/internal_impl-21.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.0_5083b204a7d0810fe73aef4e6338acc71c090aac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="e3098610dc72440ef2775466dd91c64342f31d23">
+        sha1="40725f609764a16b5c47ef0124a109f216b491ac">
         <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4f2c7f5b903131678ba4c5058a887658123842e4/classes.dex" />
     </item>
     <item
@@ -16,8 +25,35 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="ac88093830c2d85e0ffe7c77ac3fd747fe03a5b1">
+        sha1="c4cf702cadd258bc9c40c1f63c4c40d601639696">
         <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_50f1ef81d9b02a2f51f842f05507bb81ceec154a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-6.5.87_1060f89427e0673af6f4ebbd2635094fcfd3f612/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hjalmarayestas/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.0_06c2a45b9515adfb0e14cfefcfa30317bd34a737/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-21.0.0_90ae88d92168d1330e4029276527064e881391a7/classes.dex" />
     </item>
 
 </items>

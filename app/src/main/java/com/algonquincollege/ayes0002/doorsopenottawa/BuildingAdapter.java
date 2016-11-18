@@ -82,9 +82,9 @@ public class BuildingAdapter extends ArrayAdapter<Building>{
     }
 
     private class BuildingAndView {
-        public Building building;
-        public View view;
-        public Bitmap bitmap;
+        protected Building building;
+        protected View view;
+        protected Bitmap bitmap;
     }
 
     private class ImageLoader extends AsyncTask<BuildingAndView, Void, BuildingAndView> {

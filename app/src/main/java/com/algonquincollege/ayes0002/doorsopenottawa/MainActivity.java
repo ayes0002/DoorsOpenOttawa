@@ -30,7 +30,7 @@ import java.util.List;
  *  @author Hjalmar Ayestas (ayes0002@algonquinlive.com) Anton Antonenko (anto@algonquinlive.com)
  */
 
-public class MainActivity extends ListActivity implements AdapterView.OnItemClickListener {
+public class MainActivity extends ListActivity { //implements AdapterView.OnItemClickListener {
 
     // URL to Gerrys RESTful API Service hosted on his Bluemix account.
     public static final String IMAGES_BASE_URL = "https://doors-open-ottawa-hurdleg.mybluemix.net/";
@@ -51,7 +51,21 @@ public class MainActivity extends ListActivity implements AdapterView.OnItemClic
         tasks = new ArrayList<>();
 
         getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
-        getListView().setOnItemClickListener(this);
+//        getListView().setOnItemClickListener(this);
+        getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Building theSelectedBuilding = buildingList.get(position);
+                Intent intent = new Intent( getApplicationContext(), DetailActivity.class );
+                intent.setFlags( Intent.FLAG_ACTIVITY_CLEAR_TOP );
+                intent.putExtra( "buildingName", theSelectedBuilding.getName() );
+                intent.putExtra( "buildingAddress", theSelectedBuilding.getAddress() );
+                intent.putExtra( "buildingDescription", theSelectedBuilding.getDescription());
+                intent.putExtra( "buildingOpenHours", theSelectedBuilding.getDate());
+                startActivity( intent );
+                Toast.makeText(MainActivity.this, theSelectedBuilding.getName(), Toast.LENGTH_LONG).show();
+            }
+        });
         if (isOnline()) {
             requestData( REST_URI );
         } else {
@@ -95,18 +109,18 @@ public class MainActivity extends ListActivity implements AdapterView.OnItemClic
         }
     }
 
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Building theSelectedBuilding = buildingList.get(position);
-        Intent intent = new Intent( getApplicationContext(), DetailActivity.class );
-        intent.setFlags( Intent.FLAG_ACTIVITY_CLEAR_TOP );
-        intent.putExtra( "buildingName", theSelectedBuilding.getName() );
-        intent.putExtra( "buildingAddress", theSelectedBuilding.getAddress() );
-        intent.putExtra( "buildingDescription", theSelectedBuilding.getDescription());
-        intent.putExtra( "buildingOpenHours", theSelectedBuilding.getDate());
-        startActivity( intent );
-        Toast.makeText(this, theSelectedBuilding.getName(), Toast.LENGTH_LONG).show();
-    }
+//    @Override
+//    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//        Building theSelectedBuilding = buildingList.get(position);
+//        Intent intent = new Intent( getApplicationContext(), DetailActivity.class );
+//        intent.setFlags( Intent.FLAG_ACTIVITY_CLEAR_TOP );
+//        intent.putExtra( "buildingName", theSelectedBuilding.getName() );
+//        intent.putExtra( "buildingAddress", theSelectedBuilding.getAddress() );
+//        intent.putExtra( "buildingDescription", theSelectedBuilding.getDescription());
+//        intent.putExtra( "buildingOpenHours", theSelectedBuilding.getDate());
+//        startActivity( intent );
+//        Toast.makeText(this, theSelectedBuilding.getName(), Toast.LENGTH_LONG).show();
+//    }
 
     private class MyTask extends AsyncTask<String, String, List<Building>> {
 
