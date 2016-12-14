@@ -16,9 +16,7 @@ public class AboutDialogFragment extends DialogFragment {
         // Use the Builder class for convenient dialog construction
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         //TODO pro-tip: cascading messages
-        builder.setTitle(R.string.action_about)
-                .setMessage(R.string.authors)
-                .setCancelable(false)
+        builder.setMessage(R.string.author)
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

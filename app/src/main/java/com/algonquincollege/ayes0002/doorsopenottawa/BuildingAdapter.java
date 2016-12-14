@@ -59,8 +59,8 @@ public class BuildingAdapter extends ArrayAdapter<Building>{
         Building building = buildingList.get(position);
         TextView tv = (TextView) view.findViewById(R.id.textView1);
         TextView tv2 = (TextView) view.findViewById(R.id.textView2);
-        tv.setText(building.getName());
-        tv2.setText(building.getDate());
+        tv2.setText(building.getName());
+        tv.setText(building.getAddress());
 
         Bitmap bitmap = imageCache.get(building.getBuildingId());
         if (bitmap != null) {
@@ -113,6 +113,7 @@ public class BuildingAdapter extends ArrayAdapter<Building>{
 
         @Override
         protected void onPostExecute(BuildingAndView result) {
+            if(result == null) return;
             ImageView image = (ImageView) result.view.findViewById(R.id.imageView1);
             image.setImageBitmap(result.bitmap);
             imageCache.put(result.building.getBuildingId(), result.bitmap);

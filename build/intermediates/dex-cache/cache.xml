@@ -3,30 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/libs/internal_impl-21.0.0.jar"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
-        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.0_5083b204a7d0810fe73aef4e6338acc71c090aac/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="40725f609764a16b5c47ef0124a109f216b491ac">
-        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4f2c7f5b903131678ba4c5058a887658123842e4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="c4cf702cadd258bc9c40c1f63c4c40d601639696">
-        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_50f1ef81d9b02a2f51f842f05507bb81ceec154a/classes.dex" />
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_65bfe62cfaf0986f1e3a57a42cc5cb75e215ada3/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -39,21 +21,84 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/hjalmarayestas/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
-        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.0_06c2a45b9515adfb0e14cfefcfa30317bd34a737/classes.dex" />
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.4.0_6a215e97e05887f521a6deef46721bc5209d4ff0/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/classes.jar"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
-        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-21.0.0_90ae88d92168d1330e4029276527064e881391a7/classes.dex" />
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_14306a04fe6d263db1676e00e88a7771d6cde294/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hjalmarayestas/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_6124f5ad8e40d89476dba16f8e7bea2509d0adcb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_91fe5a02844820abd66a808685766c93d710f558/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_9d737f827bb661dd2231188e9b6496eeb75979a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9ea1db297e02178f302dd6d9506f21e67ed15766">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4f2c7f5b903131678ba4c5058a887658123842e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="45256c9d58f70f03d393d07da79cb93c920bfd4e">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_50f1ef81d9b02a2f51f842f05507bb81ceec154a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_d2c0cbd61dd84f27ae4e29a0ae0ef17a68ff3fb6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/Users/hjalmarayestas/Desktop/MAD9132/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.4.0_1537d87557ef4d5511841413f2f70350870ba38c/classes.dex" />
     </item>
 
 </items>

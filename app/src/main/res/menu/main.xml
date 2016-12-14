@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/action_about"
-        android:title="@string/action_about"
-        android:orderInCategory="100"
-        android:showAsAction="never" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        android:title="@string/search_title"
+        android:actionViewClass="android.widget.SearchView" />
+    <!--<menu>-->
+        <group
+            android:id="@+id/sort_options"
+            android:checkableBehavior="single">
+        <!--<item-->
+            <!--android:id="@+id/favourites"-->
+            <!--android:checked="false"-->
+            <!--android:title="Favourites" />-->
+            <item
+                android:id="@+id/action_sort_name_asc"
+                android:checked="false"
+                android:title="Sort by Name (a-z)" />
+            <item
+                android:id="@+id/action_sort_name_dsc"
+                android:checked="false"
+                android:title="Sort by Name (z-a)" />
+            <item
+                android:id="@+id/action_about"
+                android:orderInCategory="100"
+                android:title="@string/action_about" />
+        </group>
+    <!--</menu>-->
 </menu>
